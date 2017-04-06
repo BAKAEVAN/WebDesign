@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>分數判斷</h1>
+分數:<br>
+<input type="number" id="score">
+<br><br><button onclick="compare()">Summit</button><br><br>
+<p id="result">am I 及格 ?</p>
+<script>
+function compare(){
+	var c;
+		c=parseInt(document.getElementById('score').value);
+	   if(c<60)
+	    document.getElementById('result').innerHTML="不及格";
+	   else
+	   	document.getElementById('result').innerHTML="及格";
+}
+</script>
+</body>
+</html>
